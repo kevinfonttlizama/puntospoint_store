@@ -1,7 +1,7 @@
 Hola  a Todos espero esten muy bien, este es el readme para correr este desafio de puntospoint backend ruby 1.9.3 & rails 3 
 
 solo hay que tener docker e instalar las dependencias ejecutando : 
-- docker-compose build
+- docker-compose build (incluye bunfler con gemas)
 - docker-compose up (para levantar el contenedor)
 - $ docker-compose exec web rake db:create (crear db postgres)
 - $ docker-compose exec web rake db:migrate (migrar modelos)
@@ -10,6 +10,10 @@ solo hay que tener docker e instalar las dependencias ejecutando :
 correr pruebas automaticas con rspec
 
 -docker-compose exec web rspec
+
+documentacion apis json con swagger-docs 
+
+
 
 
 
