@@ -1,7 +1,7 @@
 Hola  a Todos espero esten muy bien, este es el readme para correr este desafio de puntospoint backend ruby 1.9.3 & rails 3 
 
 solo hay que tener docker e instalar las dependencias ejecutando : 
-- docker-compose build (incluye bunfler con gemas)
+- docker-compose build (incluye bundler con gemas)
 - docker-compose up (para levantar el contenedor)
 - $ docker-compose exec web rake db:create (crear db postgres)
 - $ docker-compose exec web rake db:migrate (migrar modelos)
@@ -11,7 +11,33 @@ correr pruebas automaticas con rspec
 
 -docker-compose exec web rspec
 
-documentacion apis json con swagger-docs 
+documentacion apis json con swagger-docs  
+
+-  docker-compose run web rake swagger:docs
+
+Genera la documentacion automatizada en la carpeta public/api/v1 
+
+
+
+obtener token para usar apis rest protegidas 
+
+base_url = localhost:3000
+
+post {{base_url}}/api/v1/authenticate
+
+body : {
+  "email": "admin1@example.com",
+  "password": "password"
+}
+
+el archivo postman con los endpoints de prueba se encuentra en el repositorio en la ruta raiz del proyecto 
+
+
+
+
+
+
+
 
 
 
