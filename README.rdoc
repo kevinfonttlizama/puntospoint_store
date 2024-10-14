@@ -7,6 +7,11 @@ solo hay que tener docker e instalar las dependencias ejecutando :
 - $ docker-compose exec web rake db:migrate (migrar modelos)
 - $ docker-compose exec web rake db:seed (Seeds de prueba con admins , customer, products, categories, purchases)
 
+al rellenar los seeds tambien se genera una compra, esto quiere decir que para el desafio de la primera compra se envia el correo pues se genera una primera compra de un producto al rellenar con seeds 
+
+correo de prueba kevin.fontt.test@gmail.com
+                  pass : Prueba12345
+
 
 docker-compose exec web sidekiq <--- correr sidekiq
 
@@ -35,6 +40,7 @@ body : {
 el modelo audit_log contiene la logica de seguiemiento de acciones para los usuarios admin
 
 el archivo postman con los endpoints de prueba se encuentra en el repositorio en la ruta raiz del proyecto 
+
 
 
 
