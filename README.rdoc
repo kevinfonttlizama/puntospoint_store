@@ -7,6 +7,9 @@ solo hay que tener docker e instalar las dependencias ejecutando :
 - $ docker-compose exec web rake db:migrate (migrar modelos)
 - $ docker-compose exec web rake db:seed (Seeds de prueba con admins , customer, products, categories, purchases)
 
+
+docker-compose exec web sidekiq <--- correr sidekiq
+
 correr pruebas automaticas con rspec
 
 -docker-compose exec web rspec
@@ -29,6 +32,7 @@ body : {
   "email": "admin1@example.com",
   "password": "password"
 }
+el modelo audit_log contiene la logica de seguiemiento de acciones para los usuarios admin
 
 el archivo postman con los endpoints de prueba se encuentra en el repositorio en la ruta raiz del proyecto 
 
