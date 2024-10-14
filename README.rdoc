@@ -45,6 +45,12 @@ el archivo postman con los endpoints de prueba se encuentra en el repositorio en
 
 
 
+desarrollado con VSC ubuntu WSL rails 3.2.2 ruby 1.9.3 por kevin fontt
+
+
+
+
+
 
 
 
